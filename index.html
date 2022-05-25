@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stiehl Tech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/StiehlTech-Logo-FullColor-RGB.svg" alt="Stiehl Tech" />
+        </a>
+
+        <label class="navbar-toggler" for="slide-menu-right" type="button">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </label>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <div class="navbar-nav ms-auto align-items-center">
+            <ul
+              id="menu-main"
+              class="navbar-nav me-auto mb-2 mb-md-0 align-items-center"
+            >
+              <li class="menu-item nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+              </li>
+              <li class="menu-item nav-item">
+                <a href="our-products.html" class="nav-link">Our Products</a>
+              </li>
+              <li class="menu-item nav-item">
+                <a href="case-studies.html" class="nav-link">Case Studies</a>
+              </li>
+              <li class="menu-item nav-item">
+                <a href="about-us.html" class="nav-link">About Us</a>
+              </li>
+              <li class="menu-item nav-item">
+                <a href="publications.html" class="nav-link">Publications</a>
+              </li>
+              <li class="menu-item nav-item">
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+              </li>
+              <li class="menu-item nav-item">
+                <a
+                  href=""
+                  class="nav-link btn btn-blue-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu Items -->
+    <div class="slide-menu">
+      <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
+      <div class="menu-wrap">
+        <label for="slide-menu-right" class="menu-close">Close</label>
+        <div class="menu-list">
+          <ul class="text-center">
+            <li class=""><a class="" href="index.html">Home</a></li>
+            <li class="">
+              <a href="our-products.html" class="nav-link">Our Products</a>
+            </li>
+            <li class="">
+              <a href="case-studies.html" class="nav-link">Case Studies</a>
+            </li>
+            <li class="">
+              <a href="about-us.html" class="nav-link">About Us</a>
+            </li>
+            <li class="">
+              <a href="publications.html" class="nav-link">Publications</a>
+            </li>
+            <li class="">
+              <a href="testimonials.html" class="nav-link">Testimonials</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-btn-wrap mx-auto">
+            <a
+              href="index.html"
+              class="nav-link btn btn-blue-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+      <label for="slide-menu-right" class="menu-overlay"></label>
+    </div>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section">
+      <div class="bg-overlay"></div>
+      <div class="container h-100">
+        <div class="hero-section-content d-flex align-items-center h-100">
+          <div
+            class="hero-left h-100 d-flex flex-column justify-content-lg-center justify-content-between"
+          >
+            <div class="hero-text">
+              <h1>
+                PERILAV JET<br />
+                LAVAGE SYSTEM
+              </h1>
+              <h3>
+                A Novel Approach to Treating<br />
+                Hard-to-Heal Wounds
+              </h3>
+              <h4>Safe, Simple, Effective</h4>
+            </div>
+            <div class="hero-btn-wrap align-self-start">
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <div class="hero-right d-none d-lg-block">
+            <div class="hero-right-img">
+              <img src="img/product-1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-arrow">
+        <a href="#what-perilav"><img src="img/angle-down.svg" alt="" /></a>
+      </div>
+      <div class="d-block d-lg-none mobile-hero-img">
+        <img src="img/product-1.png" alt="" />
+      </div>
+    </section>
+
+    <!-- What is Perilav -->
+
+    <section class="what-perilav standard-section" id="what-perilav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 ps-lg-5">
+            <div class="photo-wrapper circle-photo">
+              <img
+                src="img/stiehltech-homepage-wc-1.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="what-perilav-text h-100 d-flex flex-column justify-content-center"
+            >
+              <h3>What is Perilav?</h3>
+              <h5>
+                The Perilav jet lavage system adapts time-tested surgical
+                debridement methods to remove debris, necrosis and
+                bioburden/biofilm in an easy to use, all-in-one treatment.
+              </h5>
+              <div class="standard-list">
+                <ul>
+                  <li>
+                    <div class="list-text">
+                      Our system can be used by any trained clinician to debride
+                      and clean wounds more effectively than any other
+                      irrigation method.
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-text">
+                      Our system can be used by any trained clinician to debride
+                      and clean wounds more effectively than any other
+                      irrigation method.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inovative banner -->
+
+    <section class="inovative-banner">
+      <div class="container">
+        <h4 class="text-center">
+          An Innovative approach for treating acute and chronic wounds in all
+          settings
+        </h4>
+      </div>
+    </section>
+
+    <!-- Why Perilav -->
+
+    <section class="why-perilav standard-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="why-perilav-content mx-auto">
+              <h3>Why Perilav?</h3>
+              <h5>
+                Perilav addresses both removal of necrotic tissue and managing
+                the bioburden thus promoting a clean, healthy environment in the
+                wound bed.
+              </h5>
+              <div class="standard-list">
+                <ul>
+                  <li>
+                    <div class="list-text">
+                      Effective wound healing entails implementing 6 basic
+                      approaches:
+                    </div>
+                  </li>
+                  <li class="list-style-none">
+                    <ul>
+                      <li>Remove the cause</li>
+                      <li>Remove the necrotic burden and epibole</li>
+                      <li>Manage the bioburden</li>
+                      <li>Maintain moist wound environment</li>
+                      <li>Ensure adequate tissue perfusion</li>
+                      <li>Ensure adequate nutrition</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="list-text">
+                      This simple approach to a complex clinical problem is
+                      designed to be delivered in any setting: hospital, skilled
+                      nursing facility, LTAC, outpatient clinic, and even the
+                      home.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-photo-wrap">
+                <img src="img/product-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="why-perilav-content mx-auto content-right d-flex flex-column"
+            >
+              <div class="photo-wrapper circle-photo order-2 order-lg-1">
+                <img
+                  src="img/stiehltech-homepage-wc-2.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="order-1 order-lg-2">
+                <div class="standard-list">
+                  <ul>
+                    <li>
+                      <div class="list-text">
+                        With built-in safeguards, treatment procedures are much
+                        less risky for the patient and clinician.
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-text">
+                        The procedure is billable under selective debridement
+                        codes 97597 and 97598, and when used appropriately can
+                        be a revenue source for the facility or clinic.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="btn-wrap d-md-flex d-block">
+                  <a href="products.html" class="btn btn-primary"
+                    >View our product</a
+                  >
+                  <a href="case-studies.html" class="btn btn-white"
+                    >View our case studies</a
+                  >
+                </div>
+                <h5>See how your business can benefit from Perilav.</h5>
+                <a href="our-products.html" class="btn btn-outline-blue"
+                  >Calculate your revenue</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+
+    <section class="testimonials-section standard-section">
+      <div class="container">
+        <h3 class="text-center border-bottom-small">TESTIMONIALS</h3>
+        <div class="testimonials-block d-flex justify-content-center">
+          <a href="testimonials.html">
+            <div class="testimoial-box text-center">
+              <div
+                class="quote-wrap d-flex align-items-center justify-content-center"
+              >
+                <img src="img/quote_icon.svg" alt="" />
+              </div>
+              <div class="person-name">Jill</div>
+              <div class="person-job">PTA, WCC, DWC - SNF</div>
+              <div class="testimonial-divider"></div>
+              <p>
+                The Perilav system was perfect for this patient! This patient
+                had end stage MS and was bedridden for several weeks. The system
+                performed wonderfully in decreasing the necrotic tissue and
+                reduced the odor significantly.
+              </p>
+              <div class="read-more">Read More</div>
+            </div>
+          </a>
+          <a href="testimonials.html">
+            <div class="testimoial-box text-center">
+              <div
+                class="quote-wrap d-flex align-items-center justify-content-center"
+              >
+                <img src="img/quote_icon.svg" alt="" />
+              </div>
+              <div class="person-name">Katie</div>
+              <div class="person-job">PT, WCC, DWC, OMS – HOME HEALTH</div>
+              <div class="testimonial-divider"></div>
+              <p>
+                One of the best products out there as I can use it on wounds
+                with different etiologies. It helps reduce bioburden and helps
+                aide in the removal of devitalized tissue, thus promoting
+                formation of healthy granulation tissue.
+              </p>
+              <div class="read-more">Read More</div>
+            </div>
+          </a>
+          <a href="testimonials.html">
+            <div class="testimoial-box text-center">
+              <div
+                class="quote-wrap d-flex align-items-center justify-content-center"
+              >
+                <img src="img/quote_icon.svg" alt="" />
+              </div>
+              <div class="person-name">Karen</div>
+              <div class="person-job">MD – WOUND CARE CENTER</div>
+              <div class="testimonial-divider"></div>
+              <p>
+                With just two treatments a week followed by appropriate topical
+                dressings, we have reduced the need for advanced therapies on a
+                lot of wounds and lowered overall costs of managing our wounds.
+              </p>
+              <div class="read-more">Read More</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest news section -->
+
+    <section class="latest-news-section standard-section">
+      <div class="container">
+        <h3 class="text-center border-bottom-small">Latest News</h3>
+        <div class="latest-news-block d-flex justify-content-center">
+          <a href="publications.html">
+            <div class="news-box">
+              <div class="news-photo-wrap">
+                <img src="img/stiehltech-publication-1.jpg" alt="" />
+              </div>
+              <div class="news-info-wrap">
+                <div class="news-date">April 15, 2021</div>
+                <h3>Lorem ipsum dolor sit amet, consetetur</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos…
+                </p>
+                <div class="read-more">Read More</div>
+              </div>
+            </div>
+          </a>
+          <a href="publications.html">
+            <div class="news-box">
+              <div class="news-photo-wrap">
+                <img src="img/stiehltech-publication-2.jpg" alt="" />
+              </div>
+              <div class="news-info-wrap">
+                <div class="news-date">April 15, 2021</div>
+                <h3>Lorem ipsum dolor sit amet, consetetur</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos…
+                </p>
+                <div class="read-more">Read More</div>
+              </div>
+            </div>
+          </a>
+          <a href="publications.html">
+            <div class="news-box">
+              <div class="news-photo-wrap">
+                <img src="img/stiehltech-publication-3.jpg" alt="" />
+              </div>
+              <div class="news-info-wrap">
+                <div class="news-date">April 15, 2021</div>
+                <h3>Lorem ipsum dolor sit amet, consetetur</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos…
+                </p>
+                <div class="read-more">Read More</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="btn-wrap text-center">
+          <a href="publications.html" class="btn btn-blue-light">More News</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div
+          class="footer-top d-flex justify-content-between align-items-center"
+        >
+          <div class="footer-logo">
+            <a href="index.html"><img src="img/logo-footer.svg" alt="" /></a>
+          </div>
+          <div class="footer-links d-flex align-items-center">
+            <ul class="footer-menu align-items-center d-none d-lg-flex mb-0">
+              <li>
+                <a href="out-products.html">Our Product</a>
+              </li>
+              <li>
+                <a href="case-studies.html">Case Studies</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="" data-bs-toggle="modal" data-bs-target="#contactModal"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <a href="tel:844-PERILAV (737-4528)" class="tel-link"
+              ><span>844-PERILAV</span> (737-4528)</a
+            >
+          </div>
+        </div>
+        <div
+          class="footer-bottom d-flex justify-content-between align-items-center"
+        >
+          <div class="footer-copyright">
+            © 2022 All Rights Reserved. StiehlTech
+          </div>
+          <div class="footer-social-icons">
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="#"><img src="img/facebook-f.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/linkedin.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <h5 class="modal-title text-center" id="contactModalLabel">
+              Contact Us
+            </h5>
+            <h6>
+              Please reach out to us for more information or samples to trial.
+            </h6>
+            <form>
+              <div class="input-box">
+                <label for="contactName" class="form-label"
+                  >Full Name<span>*</span></label
+                >
+                <input type="text" class="form-control" id="contactName" />
+              </div>
+              <div class="input-box">
+                <label for="contactFacility" class="form-label"
+                  >Type of Facility<span>*</span>
+                </label>
+                <select class="form-select" id="contactFacility">
+                  <option value="" disabled selected hidden>Choose one</option>
+                  <option value="1">Skilled Nursing</option>
+                  <option value="2">Hospital</option>
+                  <option value="3">Outpatient</option>
+                  <option value="4">Home Health</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <label for="contactEmail" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="contactEmail"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="contactPhone" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="contactPhone" />
+                  </div>
+                </div>
+              </div>
+              <div class="input-box">
+                <label for="CommentContact" class="form-label">Comment</label>
+                <textarea
+                  class="form-control"
+                  id="CommentContact"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

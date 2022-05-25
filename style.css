@@ -45,7 +45,7 @@ a {
 .btn {
   font-size: 16px;
   line-height: 1.31;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 10px;
   border: none;
   padding: 18px 24.5px;
@@ -58,6 +58,7 @@ a {
 .btn-primary {
   background-color: var(--blue-light);
   color: #ffffff;
+  font-weight: 700;
 }
 
 .btn-primary:hover,
@@ -80,7 +81,9 @@ a {
 }
 
 .btn-blue-secondary,
-.btn-blue-secondary:hover {
+.btn-blue-secondary:hover,
+.btn-blue-secondary:active,
+.btn-blue-secondary:focus {
   background-color: var(--blue-secondary);
   color: #ffffff;
 }
@@ -223,7 +226,7 @@ a {
   z-index: 900;
 }
 .menu-close {
-  background: transparent url(img/x.svg) center no-repeat;
+  background: transparent url(img/times.svg) center no-repeat;
   filter: invert(100%) sepia(8%) saturate(7500%) hue-rotate(187deg)
     brightness(107%) contrast(108%);
   background-size: 25px;
@@ -339,7 +342,7 @@ a {
   color: #ffffff;
   font-weight: 700;
   font-size: 60px;
-  line-height: 1.13;
+  line-height: 1.225;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -347,7 +350,7 @@ a {
 .hero-section h3 {
   color: #ffffff;
   font-size: 36px;
-  line-height: 1.1666;
+  line-height: 1.23;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -358,6 +361,7 @@ a {
   color: #ffffff;
   margin-bottom: 5px;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .hero-right {
@@ -453,7 +457,7 @@ a {
   margin-bottom: 0px;
 }
 
-.standard-list ul .list-text {
+.standard-list ul li {
   font-size: 16px;
   line-height: 1.375;
   color: #000000;
@@ -465,6 +469,7 @@ a {
   line-height: 1.36;
   color: #000000;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 /******************************************
@@ -508,7 +513,7 @@ a {
   font-weight: 400;
 }
 
-.why-perilav .standard-list ul .list-text {
+.why-perilav .standard-list ul li {
   color: #ffffff;
 }
 
@@ -557,7 +562,6 @@ a {
 
 .testimonials-section h3,
 .latest-news-section h3 {
-  text-transform: uppercase;
   color: #000000;
   position: relative;
 }
@@ -605,13 +609,6 @@ a {
   flex-direction: column;
 }
 
-.read-more {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-grow: 1;
-}
-
 .testimoial-box:hover,
 .news-box:hover {
   transform: translateY(-10px);
@@ -645,11 +642,6 @@ a {
   font-size: 14px;
   line-height: 1.35;
   color: #606060;
-  display: -webkit-box;
-  -webkit-line-clamp: 7;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .testimoial-box .read-more,
@@ -659,6 +651,10 @@ a {
   font-size: 14px;
   line-height: 1.28;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 
 .quote-wrap {
@@ -734,6 +730,19 @@ a {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-info-wrap {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.news-info-wrap .read-more {
+  justify-content: flex-start;
 }
 
 .news-date {
@@ -755,16 +764,8 @@ a {
   color: #606060;
   font-size: 14px;
   line-height: 1.5;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 20px;
-}
 
-.news-info-wrap {
-  padding: 25px;
+  margin-bottom: 20px;
 }
 
 .latest-news-section .btn-wrap {
@@ -940,6 +941,110 @@ footer .footer-logo img {
   right: 25px;
 }
 
+.modal-body .btn-primary:hover,
+.modal-body .btn-primary:focus,
+.modal-body .btn-primary:active {
+  background-color: #0088ac;
+}
+
+/******************************************
+            Page Cover
+******************************************/
+.page-cover {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 5px solid var(--blue-secondary);
+}
+
+.page-cover::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 13, 47, 0.5);
+}
+
+.page-cover-content {
+  position: relative;
+  z-index: 10;
+}
+
+.page-cover-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.31;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.page-cover-content h5 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 0px;
+}
+
+/******************************************
+            Testimonial page
+******************************************/
+.testimonial-page {
+  background-color: #1f3469;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.single-testimonial {
+  max-width: 812px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--blue-secondary);
+}
+
+.single-testimonial:last-child {
+  border-bottom: none;
+}
+
+.single-testimonial p {
+  font-size: 16px;
+  line-height: 1.375;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.single-testimonial .testimonial-text p:last-child {
+  margin-bottom: 0px;
+}
+
+.person-info {
+  margin-top: 30px;
+}
+
+.person-info .person-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+  margin-bottom: 5px;
+}
+
+.person-info .person-job {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.31;
+  font-weight: 400;
+}
+
+.border-top {
+  border-top: 5px solid var(--blue-secondary) !important;
+}
 /******************************************
             Responsive
 ******************************************/
@@ -969,6 +1074,7 @@ footer .footer-logo img {
   }
   .hero-section h1 {
     font-size: 52px;
+    line-height: 1.22;
   }
   .hero-section h3 {
     font-size: 32px;
@@ -1078,6 +1184,19 @@ footer .footer-logo img {
     font-size: 28px;
   }
   .hero-section h4 {
+    font-size: 24px;
+  }
+  .testimonial-page {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .page-cover {
+    height: 350px;
+  }
+  .page-cover-content h1 {
+    font-size: 50px;
+  }
+  .page-cover-content h5 {
     font-size: 24px;
   }
 }
@@ -1218,6 +1337,15 @@ footer .footer-logo img {
   }
   .modal-body {
     padding: 60px 20px;
+  }
+  .page-cover {
+    height: 250px;
+  }
+  .page-cover h1 {
+    font-size: 42px;
+  }
+  .page-cover h5 {
+    font-size: 24px;
   }
 }
 

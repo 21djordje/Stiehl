@@ -115,9 +115,9 @@
     <section class="hero-section">
       <div class="bg-overlay"></div>
       <div class="container h-100">
-        <div class="hero-section-content d-flex align-items-center h-100">
+        <div class="hero-section-content d-flex">
           <div
-            class="hero-left h-100 d-flex flex-column justify-content-lg-center justify-content-between"
+            class="hero-left h-100 d-flex flex-column justify-content-lg-center justify-content-start align-items-start"
           >
             <div class="hero-text">
               <h1>
@@ -130,7 +130,7 @@
               </h3>
               <h4>Safe, Simple, Effective</h4>
             </div>
-            <div class="hero-btn-wrap align-self-start">
+            <div class="hero-btn-wrap align-self-start d-none d-lg-block">
               <a
                 href="#"
                 class="btn btn-primary"
@@ -140,18 +140,24 @@
               >
             </div>
           </div>
-          <div class="hero-right d-none d-lg-block">
+          <div class="hero-right">
             <div class="hero-right-img">
               <img src="img/product-1.png" alt="" />
+            </div>
+            <div class="hero-btn-wrap align-self-start d-block d-lg-none">
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+                >Contact Us</a
+              >
             </div>
           </div>
         </div>
       </div>
       <div class="hero-arrow">
         <a href="#what-perilav"><img src="img/angle-down.svg" alt="" /></a>
-      </div>
-      <div class="d-block d-lg-none mobile-hero-img">
-        <img src="img/product-1.png" alt="" />
       </div>
     </section>
 

@@ -9,6 +9,7 @@ body {
   font-family: var(--font-primary);
   letter-spacing: 0px;
   padding-top: 97px;
+  color: #000000;
 }
 
 h3 {
@@ -58,7 +59,6 @@ a {
 .btn-primary {
   background-color: var(--blue-light);
   color: #ffffff;
-  font-weight: 700;
 }
 
 .btn-primary:hover,
@@ -68,6 +68,7 @@ a {
   color: var(--blue-light);
   border: none;
   box-shadow: none;
+  outline: none;
 }
 
 .btn-blue-light {
@@ -75,9 +76,12 @@ a {
   color: var(--blue-light);
 }
 
-.btn-blue-light:hover {
+.btn-blue-light:hover,
+.btn-blue-light:active,
+.btn-blue-light:focus {
   background-color: var(--blue-light);
   color: #ffffff;
+  outline: none;
 }
 
 .btn-blue-secondary,
@@ -98,6 +102,7 @@ a {
 .btn-white:focus {
   background-color: var(--blue-light);
   color: #ffffff;
+  outline: none;
 }
 
 .btn-outline-blue {
@@ -111,6 +116,21 @@ a {
   background-color: var(--blue-light);
   color: #ffffff;
   border: 1px solid var(--blue-light);
+}
+
+.dark-overlay {
+  position: relative;
+}
+
+.dark-overlay:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 13, 47, 0.5);
+  z-index: 1;
 }
 
 /******************************************
@@ -333,8 +353,9 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 97px);
+  min-height: calc(100vh - 97px);
   position: relative;
+  padding-top: 160px;
 }
 
 .hero-section-content {
@@ -363,7 +384,6 @@ a {
   font-size: 30px;
   line-height: 1.3;
   color: #ffffff;
-  margin-bottom: 5px;
   margin-bottom: 30px;
   font-weight: 400;
 }
@@ -373,9 +393,13 @@ a {
   position: relative;
 }
 
+.hero-right-img {
+  margin-top: -60px;
+}
+
 .hero-right-img img {
-  max-width: 538px;
-  width: auto;
+  width: 538px;
+  height: auto;
 }
 
 .hero-arrow {
@@ -389,6 +413,10 @@ a {
 .mobile-hero-img {
   position: absolute;
   z-index: 10;
+}
+
+.hero-btn-wrap .btn {
+  font-weight: 700;
 }
 
 /******************************************
@@ -501,6 +529,10 @@ a {
     no-repeat padding-box;
 }
 
+.why-perilav.standard-section {
+  padding-bottom: 100px;
+}
+
 .why-perilav h3 {
   margin-bottom: 10px;
 }
@@ -523,6 +555,7 @@ a {
 
 .standard-list ul li ul {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .standard-list ul li ul li {
@@ -541,7 +574,7 @@ a {
 }
 
 .why-perilav-content.content-right .btn-wrap {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .why-perilav-content.content-right .btn-wrap a {
@@ -553,8 +586,20 @@ a {
 }
 
 .why-perilav-content.content-right h5 {
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.why-perilav-content.content-right .standard-list {
+  margin-top: 60px;
+}
+
+.why-perilav-content.content-right .standard-list ul li {
+  margin-bottom: 30px;
+}
+
+.why-perilav-content.content-right .standard-list ul li:last-child {
+  margin-bottom: 0px;
 }
 
 /******************************************
@@ -602,7 +647,7 @@ a {
   max-width: 300px;
   background-color: #ffffff;
   box-shadow: 0px 3px 6px #00000029;
-  padding: 69px 35px 25px;
+  padding: 67px 35px 25px;
   position: relative;
   height: 100%;
   -moz-transition: all 0.3s ease-out 0s;
@@ -646,6 +691,7 @@ a {
   font-size: 14px;
   line-height: 1.35;
   color: #606060;
+  margin-bottom: 25px;
 }
 
 .testimoial-box .read-more,
@@ -676,18 +722,6 @@ a {
 .quote-wrap img {
   height: 20.66px;
   width: auto;
-}
-
-.why-perilav-content.content-right .standard-list {
-  margin-top: 60px;
-}
-
-.why-perilav-content.content-right .standard-list ul li {
-  margin-bottom: 20px;
-}
-
-.why-perilav-content.content-right .standard-list ul li:last-child {
-  margin-bottom: 0px;
 }
 
 /******************************************
@@ -775,6 +809,10 @@ a {
 
 .latest-news-section .btn-wrap {
   margin-top: 40px;
+}
+
+.latest-news-section .btn-wrap .btn {
+  font-weight: 700;
 }
 
 /******************************************
@@ -904,6 +942,7 @@ footer .footer-logo img {
 .modal .form-control:focus,
 .modal .form-select:focus {
   box-shadow: none;
+  outline: none;
 }
 
 .modal-title {
@@ -951,6 +990,12 @@ footer .footer-logo img {
 .modal-body .btn-primary:focus,
 .modal-body .btn-primary:active {
   background-color: #0088ac;
+  color: #ffffff;
+  outline: none;
+}
+
+.modal .btn {
+  font-weight: 700;
 }
 
 /******************************************
@@ -1046,6 +1091,201 @@ footer .footer-logo img {
   color: #ffffff;
   line-height: 1.31;
   font-weight: 400;
+}
+
+/******************************************
+            Our Products
+******************************************/
+
+.our-products-hero {
+  padding-top: 62px;
+  padding-bottom: 72px;
+}
+
+.products-hero-text {
+  max-width: 600px;
+}
+
+.products-hero-text h1 {
+  font-size: 60px;
+  color: var(--blue-dark);
+  line-height: 1.31;
+  font-weight: 700;
+}
+
+.products-hero-text h4 {
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.products-hero-text h6 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.36;
+  margin-bottom: 20px;
+}
+
+.products-hero-text .standard-list ul li {
+  margin-bottom: 18px;
+}
+
+.products-hero-text .standard-list ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.products-hero-text .standard-list ul {
+  margin-bottom: 30px;
+}
+
+.products-hero-text .standard-list {
+  padding-left: 20px;
+}
+
+.products-hero-text p {
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+.products-hero-img {
+  margin-left: 110px;
+}
+
+.products-hero-img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 12px 24px #00000029;
+  object-fit: cover;
+}
+
+.products-big-section {
+  position: relative;
+  background: transparent linear-gradient(0deg, #1f3469 0%, #03174e 100%);
+  border-top: 10px solid var(--blue-secondary);
+  border-bottom: 10px solid var(--blue-secondary);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(img/stiehltech-our_product-how_it_works-bg.jpg) no-repeat;
+  background-position: top;
+}
+
+.products-big-section:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: transparent linear-gradient(0deg, #1f3469 0%, #03174e 100%);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.products-big-section > .container {
+  position: relative;
+  z-index: 10;
+}
+
+.how-it-works {
+  max-width: 764px;
+}
+
+.standard-video {
+  max-width: 640px;
+  height: auto;
+}
+
+.standard-video iframe {
+  box-shadow: 0px 12px 24px #00000029;
+  border: 5px solid #ffffff;
+}
+
+.how-it-works h3 {
+  position: relative;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.how-it-works h6 {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.33;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.how-it-works p {
+  max-width: 500px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.375;
+}
+
+.products-kit-photo {
+  margin-bottom: 40px;
+}
+
+.products-kit-photo img {
+  max-width: 800px;
+  height: auto;
+}
+
+.product-2-photo {
+  padding-right: 80px;
+  padding-left: 95px;
+}
+
+.product-2-photo img {
+  max-width: 388px;
+  height: auto;
+}
+
+.product-2-text p {
+  color: #ffffff;
+  line-height: 1.375;
+  margin-bottom: 20px;
+}
+
+.product-2-text p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.product-2-text {
+  max-width: 662px;
+}
+
+.tutorial-section-content {
+  position: relative;
+  z-index: 10;
+}
+
+.tutorial-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.tutorial-section-content h5 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 /******************************************
@@ -1446,6 +1686,103 @@ footer .footer-logo img {
 }
 
 /******************************************
+            Case Studies Page
+******************************************/
+
+.short-history-content.studies-short-history {
+  max-width: 1034px;
+}
+
+.short-history-content.studies-short-history P:last-child {
+  margin-bottom: 0px;
+}
+
+.case-photos-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+.case-photo {
+  margin-right: 20px;
+}
+
+.case-photo:last-child {
+  margin-right: 0px;
+}
+
+.case-info-box {
+  padding-top: 30px;
+  margin-left: 50px;
+  max-width: 616px;
+}
+
+.case-photo img {
+  width: 238px;
+  height: 367px;
+  object-fit: cover;
+  box-shadow: 0px 6px 12px #00000029;
+  border: 5px solid #ffffff;
+}
+
+.case-title h4 {
+  color: var(--blue-secondary);
+  font-weight: 700;
+  line-height: 1.31;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.case-description {
+  margin-bottom: 30px;
+}
+
+.case-description p {
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.case-description p:last-child {
+  margin-bottom: 0px;
+}
+.case-text {
+  font-size: 16px;
+  line-height: 1.375;
+  margin-bottom: 5px;
+}
+
+.case-text:last-child {
+  margin-bottom: 0px;
+}
+
+.case-period {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-top: 20px;
+}
+
+.single-case-box {
+  padding-top: 40.5px;
+  padding-bottom: 30.5px;
+  border-bottom: 1px solid #efefef;
+}
+
+.single-case-box:first-child {
+  padding-top: 0px;
+}
+
+.single-case-box:last-child {
+  padding-bottom: 0px;
+  border-bottom: 0px;
+}
+
+.studies-main-content {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+/******************************************
             Responsive
 ******************************************/
 
@@ -1471,6 +1808,13 @@ footer .footer-logo img {
   }
   .hero-right-img img {
     max-width: 450px;
+  }
+  .hero-section {
+    padding-top: 200px;
+  }
+
+  .hero-section-content {
+    align-items: center;
   }
   .hero-section h1 {
     font-size: 52px;
@@ -1528,6 +1872,9 @@ footer .footer-logo img {
   .bio-text {
     margin: 0 auto;
   }
+  .products-hero-img {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1539,27 +1886,31 @@ footer .footer-logo img {
     margin-top: 40px;
   }
 
-  .hero-left {
-    padding-top: 60px;
-    padding-bottom: 100px;
-    align-items: center;
-  }
   .hero-arrow {
     bottom: 20px;
   }
 
+  .hero-section {
+    min-height: unset;
+  }
+
   .what-perilav.standard-section {
     padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .standard-list ul li {
     margin-bottom: 20px;
   }
+
+  .standard-list ul li:last-child {
+    margin-bottom: 0px;
+  }
   .inovative-banner {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .why-perilav {
+  .why-perilav.standard-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -1576,11 +1927,17 @@ footer .footer-logo img {
     margin-bottom: 10px;
   }
   .why-perilav .product-photo-wrap {
-    margin-top: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .why-perilav-content.content-right .standard-list {
-    margin-top: 20px;
+    margin-top: 0px;
   }
+
+  .why-perilav-content.content-right .standard-list ul li {
+    margin-bottom: 20px;
+  }
+
   .why-perilav-content.content-right .btn-wrap {
     margin-top: 20px;
   }
@@ -1595,15 +1952,7 @@ footer .footer-logo img {
     width: 350px;
     height: 350px;
   }
-  .hero-section h1 {
-    font-size: 48px;
-  }
-  .hero-section h3 {
-    font-size: 28px;
-  }
-  .hero-section h4 {
-    font-size: 24px;
-  }
+
   .testimonial-page {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1638,6 +1987,72 @@ footer .footer-logo img {
   }
   .news-navigation {
     max-width: 100%;
+  }
+  .case-info-box {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .products-hero-content {
+    flex-direction: column;
+  }
+  .products-hero-img {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .our-products-hero {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .products-big-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .products-kit-2 {
+    flex-direction: column;
+  }
+  .products-kit-photo img {
+    width: 100%;
+    height: auto;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .products-kit-photo {
+    margin-bottom: 60px;
+  }
+  .product-2-text {
+    margin-bottom: 30px;
+  }
+  .product-2-photo {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .why-perilav-content .standard-list ul {
+    margin-bottom: 0px;
+  }
+  .hero-section-content {
+    flex-direction: column;
+  }
+  .hero-section {
+    padding-top: 50px;
+  }
+  .hero-right {
+    padding-left: 0px;
+  }
+
+  .hero-section h4 {
+    margin-bottom: 0px;
+  }
+
+  .hero-right-img {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .hero-right-img img {
+    max-width: 350px;
+  }
+  .hero-right .hero-btn-wrap {
+    transform: translateY(-100px);
   }
 }
 
@@ -1705,6 +2120,20 @@ footer .footer-logo img {
   .publications-page .latest-news-block a {
     margin-bottom: 0px;
   }
+  .products-hero-img img {
+    width: 400px;
+    height: 400px;
+  }
+  .standard-video {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-section {
+    padding-top: 30px;
+  }
+  .hero-right-img img {
+    max-width: 400px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -1754,7 +2183,7 @@ footer .footer-logo img {
     display: inline-block;
   }
   .why-perilav-content.content-right h5 {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
   .footer-top {
@@ -1809,6 +2238,50 @@ footer .footer-logo img {
   .publications-page .news-info-wrap {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .studies-main-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .case-photo {
+    margin-right: 13px;
+  }
+  .case-photo img {
+    width: 161px;
+    height: 246px;
+  }
+  .case-period {
+    margin-top: 14px;
+  }
+  .single-case-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .case-stats-box table {
+    table-layout: fixed;
+  }
+
+  .case-stats-box table tr td {
+    max-width: 50%;
+  }
+  .products-hero-img img {
+    width: 335px;
+    height: 335px;
+  }
+  .product-2-photo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .tutorial-section {
+    padding-top: 225px;
+    padding-bottom: 175px;
+    background-position: 0% 0%;
+  }
+  .hero-right-img img {
+    max-width: 255px;
+  }
+  .hero-section {
+    padding-bottom: 0px;
   }
 }
 

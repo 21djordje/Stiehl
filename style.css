@@ -1782,6 +1782,14 @@ footer .footer-logo img {
   padding-bottom: 100px;
 }
 
+.case-data {
+  display: flex;
+}
+
+.case-data .case-text:first-child {
+  min-width: 280px;
+}
+
 /******************************************
             Responsive
 ******************************************/
@@ -2282,6 +2290,13 @@ footer .footer-logo img {
   }
   .hero-section {
     padding-bottom: 0px;
+  }
+  .case-data .case-text:first-child {
+    min-width: 50%;
+    padding-right: 13px;
+  }
+  .case-data .case-text {
+    width: 50%;
   }
 }
 

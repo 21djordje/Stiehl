@@ -134,7 +134,7 @@ a {
 }
 
 /******************************************
-                Navbar
+              Navbar
 ******************************************/
 
 .navbar {
@@ -144,6 +144,7 @@ a {
   padding-top: 14px;
   padding-bottom: 14px;
 }
+
 .navbar.scrollUp {
   transform: translateY(-100px);
 }
@@ -185,6 +186,7 @@ a {
 .navbar-nav > li > a:focus {
   color: var(--blue-light);
 }
+
 .nav-link.active {
   color: var(--blue-light) !important;
 }
@@ -193,6 +195,7 @@ a {
   position: relative;
   border: 0;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: 0;
@@ -239,6 +242,7 @@ a {
   bottom: 0;
   z-index: 999;
 }
+
 .menu-overlay {
   background: rgba(0, 0, 0, 0.4);
   display: none;
@@ -249,6 +253,7 @@ a {
   bottom: 0;
   z-index: 900;
 }
+
 .menu-close {
   background: transparent url(img/times.svg) center no-repeat;
   filter: invert(100%) sepia(8%) saturate(7500%) hue-rotate(187deg)
@@ -263,18 +268,23 @@ a {
   text-indent: -9999px;
   transition: all 0.3s;
 }
+
 .menu-close:hover {
   cursor: pointer;
 }
+
 .menu-wrap:hover .menu-close {
   opacity: 1;
 }
+
 .menu-toggle {
   display: none;
 }
+
 .menu-toggle:checked + .menu-wrap {
   right: 0;
 }
+
 .menu-toggle:checked ~ .menu-overlay {
   display: block;
 }
@@ -288,17 +298,21 @@ a {
   display: block;
   overflow: hidden;
 }
+
 .menu-wrap:hover .menu-list {
   overflow-y: auto;
 }
+
 .menu-list ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .menu-list li {
   display: block;
 }
+
 .menu-list li a,
 .menu-list li label {
   display: block;
@@ -312,6 +326,7 @@ a {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
 .menu-list li a:hover,
 .menu-list li label:hover,
 .menu-list li a:active,
@@ -345,7 +360,7 @@ a {
 }
 
 /******************************************
-                Hero
+              Hero
 ******************************************/
 
 .hero-section {
@@ -420,7 +435,7 @@ a {
 }
 
 /******************************************
-                What is Perilav
+              What is Perilav
 ******************************************/
 #what-perilav {
   background-color: #ffffff;
@@ -459,6 +474,10 @@ a {
   top: 2px;
 }
 
+.standard-list ul li.has_child:before {
+  content: "";
+}
+
 .list-style-none:before {
   content: "" !important;
 }
@@ -473,7 +492,7 @@ a {
 
 .standard-list ul li ul li:before {
   position: absolute;
-  content: "•";
+  content: "â€¢";
   color: #ffffff;
   font-size: 16px;
   left: -20px;
@@ -505,24 +524,24 @@ a {
 }
 
 /******************************************
-          Inovative Banner
+        Inovative Banner
 ******************************************/
 .inovative-banner {
   background-color: var(--blue-secondary);
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .inovative-banner h4 {
   color: #ffffff;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 0px;
 }
 
 /******************************************
-            Why Perilav
+          Why Perilav
 ******************************************/
 .why-perilav {
   background: transparent linear-gradient(0deg, #1f3469 0%, #03174e 100%) 0% 0%
@@ -603,7 +622,168 @@ a {
 }
 
 /******************************************
-          Testimonials
+        Single Post
+******************************************/
+
+.latest-news-block.single-news-box .news-date {
+  margin-bottom: 10px;
+}
+
+.latest-news-block.single-news-box .news-info-wrap h3 {
+  font-size: 35px;
+  line-height: 1.31;
+  margin-bottom: 11px;
+}
+
+.post-info-icon {
+  margin-right: 7px;
+}
+
+.post-info-icon img {
+  height: 14.86px;
+  width: auto;
+}
+
+.post-author,
+.post-author a {
+  font-size: 15px;
+  line-height: 1.33;
+  color: #000000;
+}
+
+.post-author span {
+  font-weight: 700;
+}
+
+.single-news-header {
+  padding-bottom: 32.5px;
+}
+
+.single-news-body {
+  padding-top: 33.5px;
+  padding-bottom: 33.5px;
+  border-top: 1px dashed #e1e1e1;
+  border-bottom: 1px dashed #e1e1e1;
+  margin-bottom: 163px;
+}
+
+.single-news-body p {
+  margin-bottom: 35px;
+  line-height: 1.66;
+}
+
+.single-news-body p:last-child {
+  margin-bottom: 0px;
+}
+
+.highlighted-box {
+  box-shadow: 0px 0px 20px #0000001a;
+  padding: 28px 30px;
+  border-radius: 4px 0px 0px 4px;
+  border-left: 5px solid var(--blue-secondary);
+  margin-bottom: 33px;
+}
+
+.news-info-wrap .highlighted-box p:last-of-type {
+  margin-bottom: 0px;
+}
+
+.highlighted-box p {
+  line-height: 1.61;
+  margin-bottom: 0px;
+}
+
+.single-news-body h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.29;
+  margin-bottom: 12px;
+}
+
+.single-news-body ul {
+  margin-bottom: 16px;
+}
+
+.single-news-body ul li {
+  color: #606060;
+  font-size: 14px;
+  line-height: 1.28;
+  margin-bottom: 7px;
+}
+
+.single-news-body ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.related-post {
+  box-shadow: 0px 12px 24px #00000029;
+  max-width: 370px;
+}
+
+.related-post-date {
+  color: var(--blue-secondary);
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.related-post-heading {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.23;
+  margin-bottom: 14px;
+}
+
+.related-post p {
+  font-size: 14px;
+  color: #606060;
+  margin-bottom: 25px;
+  line-height: 1.39;
+}
+
+.related-post-img img {
+  width: 370px;
+  height: 214px;
+  object-fit: cover;
+}
+
+.related-posts-box a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.related-posts-box a:first-child {
+  margin-left: 0px;
+}
+
+.related-posts-box a:last-child {
+  margin-right: 0px;
+}
+
+.related-posts-box a:hover {
+  transform: translateY(-10px);
+}
+
+.related-posts-box a:hover .related-post {
+  box-shadow: 0px 12px 24px #00000029;
+}
+
+.related-post-info {
+  padding: 25px;
+}
+
+.related-post .read-more {
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--blue-secondary);
+  font-weight: 700;
+}
+
+/******************************************
+        Testimonials
 ******************************************/
 .testimonials-section {
   background-color: #fafafa;
@@ -725,7 +905,7 @@ a {
 }
 
 /******************************************
-            Latest News
+          Latest News
 ******************************************/
 
 .latest-news-section {
@@ -816,7 +996,7 @@ a {
 }
 
 /******************************************
-            Footer
+          Footer
 ******************************************/
 footer {
   background-color: #212121;
@@ -897,7 +1077,7 @@ footer .footer-logo img {
 }
 
 /******************************************
-            Modal
+          Modal
 ******************************************/
 .modal-content {
   border-radius: 0px;
@@ -973,6 +1153,7 @@ footer .footer-logo img {
   line-height: 1.31;
   letter-spacing: 0.08px;
 }
+
 .modal .btn {
   margin-top: 20px;
 }
@@ -999,7 +1180,7 @@ footer .footer-logo img {
 }
 
 /******************************************
-            Page Cover
+          Page Cover
 ******************************************/
 .page-cover {
   height: 400px;
@@ -1044,7 +1225,7 @@ footer .footer-logo img {
 }
 
 /******************************************
-            Testimonial page
+          Testimonial page
 ******************************************/
 .testimonial-page {
   background-color: #1f3469;
@@ -1094,7 +1275,7 @@ footer .footer-logo img {
 }
 
 /******************************************
-            Our Products
+          Our Products
 ******************************************/
 
 .our-products-hero {
@@ -1196,7 +1377,8 @@ footer .footer-logo img {
 }
 
 .standard-video {
-  max-width: 640px;
+  width: 640px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1301,8 +1483,107 @@ footer .footer-logo img {
   font-weight: 400;
 }
 
+.revenue-model-box {
+  max-width: 100%;
+  width: 603px;
+  margin: 42px auto 10px;
+}
+.revenue-model-box .nav-tabs {
+  padding-left: 10px;
+  border: 0;
+}
+
+.revenue-model-box .nav-tabs .nav-link {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #1f3469;
+  color: #fff;
+  border: 0;
+  height: 45px;
+}
+
+.revenue-model-box .nav-tabs .nav-link.active {
+  background: var(--blue-secondary);
+  color: #fff !important;
+}
+
+.revenue-model-box .tab-content {
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid var(--blue-secondary);
+}
+
+/* table */
+.revenue-table-box {
+  margin: 10px;
+  border: 1px solid #e8e8e8;
+}
+
+.revenue-cell {
+  width: 50%;
+  min-height: 45px;
+  font-size: 16px;
+  line-height: 1.1;
+}
+.revenue-cell:first-child {
+  padding: 3px 15px;
+  min-height: 45px;
+}
+.child-cell {
+  padding: 3px 2px;
+  min-height: 45px;
+}
+
+.revenue-cell span {
+  font-size: 14px;
+}
+
+.revenue-cell:first-child {
+  border-bottom: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}
+.revenue-cell:last-child {
+  border-bottom: 1px solid #fff;
+}
+.revenue-row:last-child .revenue-cell {
+  border-bottom: 0;
+}
+
+.cell-33 {
+  width: 33.33%;
+  border-right: 1px solid #fff;
+}
+.cell-33:last-child {
+  border-right: 0;
+}
+
+.bg-grey {
+  background: #f0f0f0;
+}
+.bg-yellow {
+  background: #fffce2;
+}
+.bg-orange {
+  background: #ffefe2;
+}
+.bg-blue {
+  background: #e2f8ff;
+}
+.bg-green {
+  background: #e8ffe2;
+}
+
+/* table */
+
+.revenue-footnote {
+  color: #fff;
+  font-size: 14px;
+}
+
 /******************************************
-            About Page
+          About Page
 ******************************************/
 
 .short-history {
@@ -1426,7 +1707,7 @@ footer .footer-logo img {
 }
 
 /******************************************
-          Publications Page
+        Publications Page
 ******************************************/
 
 .publications-page {
@@ -1648,6 +1929,7 @@ footer .footer-logo img {
 .popular-tags.news-nav ul li:hover {
   background-color: var(--blue-light);
 }
+
 .popular-tags.news-nav ul li:hover a {
   color: #ffffff;
 }
@@ -1699,7 +1981,7 @@ footer .footer-logo img {
 }
 
 /******************************************
-            Case Studies Page
+          Case Studies Page
 ******************************************/
 
 .short-history-content.studies-short-history {
@@ -1758,6 +2040,7 @@ footer .footer-logo img {
 .case-description p:last-child {
   margin-bottom: 0px;
 }
+
 .case-text {
   font-size: 16px;
   line-height: 1.375;
@@ -1804,7 +2087,7 @@ footer .footer-logo img {
 }
 
 /******************************************
-            Responsive
+          Responsive
 ******************************************/
 
 @media (max-width: 1399.98px) {
@@ -1815,9 +2098,11 @@ footer .footer-logo img {
     margin-left: 10px;
     margin-right: 10px;
   }
+
   .hero-right-img img {
     max-width: 500px;
   }
+
   .hero-right {
     padding-left: 100px;
   }
@@ -1827,9 +2112,11 @@ footer .footer-logo img {
   .hero-right {
     padding-left: 20px;
   }
+
   .hero-right-img img {
     max-width: 450px;
   }
+
   .hero-section {
     padding-top: 200px;
   }
@@ -1837,40 +2124,51 @@ footer .footer-logo img {
   .hero-section-content {
     align-items: center;
   }
+
   .hero-section h1 {
     font-size: 52px;
     line-height: 1.22;
   }
+
   .hero-section h3 {
     font-size: 32px;
   }
+
   .hero-section h4 {
     font-size: 28px;
   }
+
   .circle-photo img {
     max-height: 420px;
   }
+
   .news-info-wrap h3 {
     font-size: 24px;
   }
+
   .navbar-nav > li {
     margin-left: 5px;
     margin-right: 5px;
   }
+
   .navbar-nav > li > a {
     font-size: 14px;
   }
+
   .menu-item .btn {
     padding: 15px 10px !important;
   }
+
   .footer-menu li {
     margin-left: 10px;
     margin-right: 10px;
   }
+
   .testimonials-block a {
     margin-left: 20px;
     margin-right: 20px;
   }
+
   .latest-news-block a {
     margin-left: 15px;
     margin-right: 15px;
@@ -1881,18 +2179,22 @@ footer .footer-logo img {
   .single-person {
     flex-direction: column;
   }
+
   .biography-section .biography-block {
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .bio-right {
     padding-top: 0px;
     padding-left: 0px;
     margin-top: 20px;
   }
+
   .bio-text {
     margin: 0 auto;
   }
+
   .products-hero-img {
     margin-left: 0px;
   }
@@ -1903,6 +2205,7 @@ footer .footer-logo img {
     text-align: center;
     margin-bottom: 30px;
   }
+
   .why-perilav-content .photo-wrapper {
     margin-top: 40px;
   }
@@ -1927,30 +2230,38 @@ footer .footer-logo img {
   .standard-list ul li:last-child {
     margin-bottom: 0px;
   }
+
   .inovative-banner {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .why-perilav.standard-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   .why-perilav-content .photo-wrapper {
     margin-bottom: 0px;
   }
+
   .why-perilav-content .standard-list li {
     margin-bottom: 10px;
   }
+
   .why-perilav-content .standard-list ul li ul li {
     margin-bottom: 5px;
   }
+
   .why-perilav-content .standard-list ul li ul li:last-child {
     margin-bottom: 10px;
   }
+
   .why-perilav .product-photo-wrap {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+
   .why-perilav-content.content-right .standard-list {
     margin-top: 0px;
   }
@@ -1962,13 +2273,16 @@ footer .footer-logo img {
   .why-perilav-content.content-right .btn-wrap {
     margin-top: 20px;
   }
+
   .mobile-hero-img img {
     max-height: 450px;
   }
+
   .mobile-hero-img {
     bottom: 80px;
     right: 100px;
   }
+
   .circle-photo img {
     width: 350px;
     height: 350px;
@@ -1978,84 +2292,107 @@ footer .footer-logo img {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
   .page-cover {
     height: 350px;
   }
+
   .page-cover-content h1 {
     font-size: 50px;
   }
+
   .page-cover-content h5 {
     font-size: 24px;
   }
+
   .short-history {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .short-history p {
     font-size: 18px;
   }
+
   .biography-section {
     padding-top: 40px;
     padding-bottom: 65px;
   }
+
   .publications-page {
     padding-top: 30px;
     padding-bottom: 60px;
   }
+
   .pagination-block {
     margin-top: 30px;
     margin-bottom: 40px;
   }
+
   .news-navigation {
     max-width: 100%;
   }
+
   .case-info-box {
     margin-left: 0px;
     max-width: 100%;
   }
+
   .products-hero-content {
     flex-direction: column;
   }
+
   .products-hero-img {
     text-align: center;
     margin-top: 40px;
   }
+
   .our-products-hero {
     padding-top: 40px;
     padding-bottom: 60px;
   }
+
   .products-big-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   .products-kit-2 {
     flex-direction: column;
   }
+
   .products-kit-photo img {
     width: 100%;
     height: auto;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+
   .products-kit-photo {
     margin-bottom: 60px;
   }
+
   .product-2-text {
     margin-bottom: 30px;
   }
+
   .product-2-photo {
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .why-perilav-content .standard-list ul {
     margin-bottom: 0px;
   }
+
   .hero-section-content {
     flex-direction: column;
   }
+
   .hero-section {
     padding-top: 50px;
   }
+
   .hero-right {
     padding-left: 0px;
   }
@@ -2072,12 +2409,38 @@ footer .footer-logo img {
   .hero-right-img img {
     max-width: 350px;
   }
+
   .hero-right .hero-btn-wrap {
     transform: translateY(-100px);
   }
+
   .case-photos-wrap {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .related-posts-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .single-news-body {
+    margin-bottom: 60px;
+  }
+  .related-posts-section {
+    padding-top: 60px;
+  }
+  .related-posts-section h4 {
+    display: none;
+  }
+  .related-posts-box a {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .related-posts-box a:last-child {
+    margin-bottom: 0px;
+  }
+  .news-navigation .search-wrap {
+    margin-bottom: 30px;
   }
 }
 
@@ -2086,13 +2449,16 @@ footer .footer-logo img {
     margin-left: 5px;
     margin-right: 5px;
   }
+
   .testimoial-box {
     padding: 55px 25px 15px;
   }
+
   .latest-news-block a {
     margin-left: 5px;
     margin-right: 5px;
   }
+
   .latest-news-section .news-info-wrap h3 {
     font-size: 18px;
   }
@@ -2108,56 +2474,75 @@ footer .footer-logo img {
     flex-direction: column;
     align-items: center;
   }
+
   .latest-news-block a {
     margin-left: 0px;
     margin-right: 0px;
   }
+
   .testimonials-block a {
     margin-bottom: 60px;
     margin-left: 0px;
     margin-right: 0px;
   }
+
   .testimonials-block a:last-child {
     margin-bottom: 0px;
   }
+
   .latest-news-section.standard-section {
     padding-bottom: 40px;
   }
+
   .latest-news-block a {
     margin-bottom: 30px;
   }
+
   .latest-news-block a:last-child {
     margin-bottom: 0px;
   }
+
   .latest-news-section .btn-wrap {
     margin-top: 30px;
   }
+
   .mobile-hero-img img {
     max-height: 370px;
   }
+
   .circle-photo img {
     width: 336px;
     height: 336px;
   }
+
   .publications-page .news-photo-wrap {
     height: 340px;
   }
+
   .publications-page .latest-news-block a {
     margin-bottom: 0px;
   }
+
   .products-hero-img img {
     width: 400px;
     height: 400px;
   }
+
   .standard-video {
     max-width: 100%;
     text-align: center;
   }
+
   .hero-section {
     padding-top: 30px;
   }
+
   .hero-right-img img {
     max-width: 400px;
+  }
+
+  .revenue-cell {
+    width: 100%;
   }
 }
 
@@ -2171,6 +2556,7 @@ footer .footer-logo img {
   .menu-wrap {
     width: 100%;
   }
+
   .menu-list {
     width: 100%;
     left: 0;
@@ -2178,18 +2564,22 @@ footer .footer-logo img {
     padding-right: 20px;
     padding-left: 20px;
   }
+
   .hero-section h1 {
     font-size: 42px;
   }
+
   .hero-section h3 {
     font-size: 24px;
     line-height: 1.25;
     margin-bottom: 17px;
   }
+
   .hero-section h4 {
     font-size: 22px;
     margin-bottom: 0px;
   }
+
   .mobile-hero-img {
     bottom: 150px;
     left: 50%;
@@ -2197,91 +2587,117 @@ footer .footer-logo img {
     max-width: 255px;
     width: 100%;
   }
+
   .mobile-hero-img img {
     width: 100%;
     object-fit: cover;
   }
+
   .why-perilav-content.content-right .btn-wrap a {
     margin-bottom: 20px;
   }
+
   .btn-wrap a {
     display: inline-block;
   }
+
   .why-perilav-content.content-right h5 {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
   .footer-top {
     flex-direction: column;
     align-items: center;
   }
+
   .footer-bottom {
     flex-direction: column;
     align-items: center;
   }
+
   .footer-copyright {
     order: 2;
   }
+
   .footer-social-icons {
     order: 1;
     margin-bottom: 20px;
   }
+
   .tel-link {
     padding: 20px;
   }
+
   .footer-social-icons ul {
     margin-bottom: 0px;
   }
+
   .footer-social-icons ul {
     padding-left: 0px;
   }
+
   .footer-bottom {
     padding: 0px;
     padding-bottom: 25px;
   }
+
   .modal-body {
     padding: 60px 20px;
   }
+
   .page-cover {
     height: 250px;
   }
+
   .page-cover h1 {
     font-size: 42px;
   }
+
   .page-cover h5 {
     font-size: 24px;
   }
+
   .publications-page .news-photo-wrap {
     height: 194px;
   }
+
   .publications-page .news-info-wrap h3 {
     line-height: 1.2;
   }
+
   .publications-page .news-box {
     margin-bottom: 30px;
   }
+
   .publications-page .news-info-wrap {
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .studies-main-content {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   .case-photo {
     margin-right: 13px;
   }
+
   .case-photo img {
     width: 161px;
     height: 246px;
   }
+
   .case-period {
     margin-top: 14px;
   }
+
   .single-case-box {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .case-stats-box table {
     table-layout: fixed;
   }
@@ -2289,29 +2705,36 @@ footer .footer-logo img {
   .case-stats-box table tr td {
     max-width: 50%;
   }
+
   .products-hero-img img {
     width: 335px;
     height: 335px;
   }
+
   .product-2-photo img {
     max-width: 100%;
     height: auto;
   }
+
   .tutorial-section {
     padding-top: 225px;
     padding-bottom: 165px;
     background-position: 0% 0%;
   }
+
   .hero-right-img img {
     max-width: 255px;
   }
+
   .hero-section {
     padding-bottom: 0px;
   }
+
   .case-data .case-text:first-child {
     min-width: 50%;
     padding-right: 13px;
   }
+
   .case-data .case-text {
     width: 50%;
   }
@@ -2322,15 +2745,19 @@ footer .footer-logo img {
     width: 100%;
     max-height: 280px;
   }
+
   .hero-section h1 {
     font-size: 38px;
   }
+
   .hero-section h3 {
     font-size: 20px;
   }
+
   .hero-section h4 {
     font-size: 18px;
   }
+
   .navbar-brand img {
     height: 45px;
   }
@@ -2340,18 +2767,23 @@ footer .footer-logo img {
   .circle-photo img {
     max-height: 250px;
   }
+
   .hero-section h1 {
     font-size: 32px;
   }
+
   .hero-section h3 {
     font-size: 18px;
   }
+
   .hero-section h4 {
     font-size: 16px;
   }
+
   .navbar-brand img {
     height: 35px;
   }
+
   body {
     padding-top: 75px;
   }

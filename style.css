@@ -1288,6 +1288,19 @@ footer .footer-logo img {
   margin-bottom: 0px;
 }
 
+.revenue-model-section {
+  background: transparent linear-gradient(0deg, #1f3469 0%, #03174e 100%) 0% 0%
+    no-repeat;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.revenue-model-section h3 {
+  color: #ffffff;
+  position: relative;
+  font-weight: 400;
+}
+
 /******************************************
             About Page
 ******************************************/
@@ -2286,7 +2299,7 @@ footer .footer-logo img {
   }
   .tutorial-section {
     padding-top: 225px;
-    padding-bottom: 175px;
+    padding-bottom: 165px;
     background-position: 0% 0%;
   }
   .hero-right-img img {
